@@ -1,0 +1,108 @@
+
+input {
+    height: 1.7em;
+    width: 7em;
+}
+
+.account {
+    padding: 1em;
+    padding-bottom: 1.3em;
+    background-color: aliceblue;
+}
+
+.info {
+    padding: 1em;
+}
+
+.witdepContainer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.witdepContainer .witdepForm {
+    height: 110px;
+}
+
+.witdep {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    float: right;
+    height: 2em;
+    font-weight: bold;
+}
+.witdepForm, .updateForm {
+    border: cadetblue solid;
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 31%;
+    min-width: 330px;
+}
+
+.witdep p {
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+.updateForm {
+    width: 50%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputfield {
+    text-align: left;
+    height: 2.5em;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=submit] {
+    justify-content: flex-end;
+    margin: 0;
+    height: 2em;
+    text-align: center;
+    background-color: lime;
+    outline: none;
+    font-weight: bold;
+    color: black;
+}
+
+input[type=submit]:hover:not(:disabled) {
+    background-color: yellowgreen;
+}
+
+input[type=submit]:disabled{
+    background-color: black;
+}
+
+form {
+    height: 100%;
+}
+
+.witdepForm  form, .updateForm form {
+    position: relative;
+}
+.witdepForm  form  input[type=submit],
+.updateForm form  input[type=submit] {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+}

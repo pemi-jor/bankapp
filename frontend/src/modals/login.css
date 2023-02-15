@@ -1,0 +1,72 @@
+.LoginSignupModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.Login {
+    background-color: rgb(190, 190, 190);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    padding: 6em;
+    border-radius: 2em;
+}
+
+.Login > h2 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.Login > div {
+    margin: 8px;
+}
+
+.Login > form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login > form > div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login label {
+    padding: 4px;
+}
+
+.Login input {
+    padding: 4px;
+    margin: 4px;
+}
+
+.Login label, .Login h2, .Login input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.Login input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.Login input[type=submit] {
+    margin-top: 1em;
+}
